@@ -44,7 +44,7 @@ $xml_sport_act->appendChild($xml_sport_val);
 $xml_id = $xml->createElement("ID");
 $xml_sport->appendChild($xml_id);
 
-$xml_id_text = $xml->createTextNode($wahoo_xml->Activities->Activity->Id);
+$xml_id_text = $xml->createTextNode($garmin_xml->Activities->Activity->Id);
 $xml_id->appendChild($xml_id_text);
 
 //Creating the lap start
@@ -56,8 +56,59 @@ $xml_lap_val = $xml->createTextNode("Some val here");
 $xml_lap_start->appendChild($xml_lap_val);
 
 //Creating the totals
-$xml_total_time = $xml->createTextNode(
+//Total time
+$xml_tts = $xml->createElement("TotalTimeSeconds");
+$xml_lap->appendChild($xml_tts);
+$xml_tts_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->TotalTimeSeconds);
+$xml_tts->appendChild($xml_tts_val);
 
+//DistanceMeters
+$xml_dm = $xml->createElement("DistanceMeters");
+$xml_lap->appendChild($xml_dm);
+$xml_dm_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->DistanceMeters);
+$xml_dm->appendChild($xml_dm_val);
+
+//DistanceMeters
+$xml_ms = $xml->createElement("MaximumSpeed");
+$xml_lap->appendChild($xml_ms);
+$xml_ms_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->MaximumSpeed);
+$xml_ms->appendChild($xml_ms_val);
+
+//Calories
+$xml_cal = $xml->createElement("Calories");
+$xml_lap->appendChild($xml_cal);
+$xml_cal_val = $xml->createTextNode($wahoo_xml->Activities->Activity->Lap->Calories);
+$xml_cal->appendChild($xml_cal_val);
+
+//AverageHeartRateBpm
+$xml_ahr = $xml->createElement("AverageHeartRateBpm");
+$xml_lap->appendChild($xml_ahr);
+$xml_ahr_at = $xml->createElement("Value");
+$xml_ahr->appendChild($xml_ahr_at);
+$xml_ahr_val = $xml->createTextNode($wahoo_xml->Activities->Activity->Lap->AverageHeartRateBpm->Value);
+$xml_ahr_at->appendChild($xml_ahr_val);
+
+//MaximumHeartRateBpm
+$xml_mhr = $xml->createElement("MaximumHeartRateBpm");
+$xml_lap->appendChild($xml_mhr);
+$xml_mhr_at = $xml->createElement("Value");
+$xml_mhr->appendChild($xml_mhr_at);
+$xml_mhr_val = $xml->createTextNode($wahoo_xml->Activities->Activity->Lap->MaximumHeartRateBpm->Value);
+$xml_mhr_at->appendChild($xml_mhr_val);
+
+
+//Creating static Fields
+//Intesity!
+$xml_int = $xml->createElement("Intensity");
+$xml_lap->appendChild($xml_int);
+$xml_int_val = $xml->createTextNode("Active");
+$xml_int->appendChild($xml_int_val);
+
+//TriggerMethod
+$xml_tm = $xml->createElement("TriggerMethod");
+$xml_lap->appendChild($xml_tm);
+$xml_tm_val = $xml->createTextNode("Manual");
+$xml_tm->appendChild($xml_tm_val);
 
 
 $xml->preserveWhiteSpace = false;
@@ -65,6 +116,6 @@ $xml->formatOutput = true;
 //$xml->loadXML($simpleXml->asXML());
 //echo $xml->saveXML();
 $xml->save("test.xml");
-
-//print_r($wahoo_xml); 
+//echo $garmin_xml->Activities->Activity->Lap->TotalTimeSeconds
+//print_r($garmin_xml); 
 ?>
