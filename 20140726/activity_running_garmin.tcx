@@ -1,0 +1,2495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TrainingCenterDatabase
+  xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"
+  xmlns:ns5="http://www.garmin.com/xmlschemas/ActivityGoals/v1"
+  xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2"
+  xmlns:ns2="http://www.garmin.com/xmlschemas/UserProfile/v2"
+  xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://www.garmin.com/xmlschemas/ProfileExtension/v1">
+  <Activities>
+    <Activity Sport="Running">
+      <Id>2014-07-26T19:06:36.000Z</Id>
+      <Lap StartTime="2014-07-26T19:06:36.000Z">
+        <TotalTimeSeconds>2768.848</TotalTimeSeconds>
+        <DistanceMeters>5042.33</DistanceMeters>
+        <MaximumSpeed>2.2309999465942383</MaximumSpeed>
+        <Calories>540</Calories>
+        <Intensity>Active</Intensity>
+        <TriggerMethod>Manual</TriggerMethod>
+        <Track>
+          <Trackpoint>
+            <Time>2014-07-26T19:06:36.000Z</Time>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:06:56.000Z</Time>
+            <DistanceMeters>21.0</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.3910000324249268</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:07:11.000Z</Time>
+            <DistanceMeters>42.279998779296875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4420000314712524</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:07:25.000Z</Time>
+            <DistanceMeters>62.630001068115234</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.472000002861023</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:07:39.000Z</Time>
+            <DistanceMeters>83.06999969482422</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4600000381469727</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:07:53.000Z</Time>
+            <DistanceMeters>103.66000366210938</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.472000002861023</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:08:07.000Z</Time>
+            <DistanceMeters>124.31999969482422</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4839999675750732</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:08:21.000Z</Time>
+            <DistanceMeters>144.8800048828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4559999704360962</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:08:35.000Z</Time>
+            <DistanceMeters>165.41000366210938</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4559999704360962</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:08:49.000Z</Time>
+            <DistanceMeters>185.91000366210938</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4639999866485593</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:09:03.000Z</Time>
+            <DistanceMeters>206.42999267578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4639999866485593</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:09:17.000Z</Time>
+            <DistanceMeters>226.97999572753906</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4639999866485593</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:09:31.000Z</Time>
+            <DistanceMeters>247.36000061035156</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4639999866485593</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:09:45.000Z</Time>
+            <DistanceMeters>268.0199890136719</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4680000543594358</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:09:59.000Z</Time>
+            <DistanceMeters>288.57000732421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4680000543594358</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:10:13.000Z</Time>
+            <DistanceMeters>308.9599914550781</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4450000524520874</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:10:27.000Z</Time>
+            <DistanceMeters>329.2099914550781</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4600000381469727</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:10:41.000Z</Time>
+            <DistanceMeters>349.739990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4800000190734863</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:10:55.000Z</Time>
+            <DistanceMeters>370.44000244140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4759999513626099</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:11:09.000Z</Time>
+            <DistanceMeters>391.2200012207031</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4910000562667847</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:11:23.000Z</Time>
+            <DistanceMeters>412.1000061035156</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4950000047683716</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:11:37.000Z</Time>
+            <DistanceMeters>433.0299987792969</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.503000020980835</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:11:49.000Z</Time>
+            <DistanceMeters>454.7900085449219</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.9700000286102295</Speed>
+                <RunCadence>74</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:11:59.000Z</Time>
+            <DistanceMeters>474.8599853515625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.015000104904175</Speed>
+                <RunCadence>75</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:12:09.000Z</Time>
+            <DistanceMeters>495.260009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.056999921798706</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:12:19.000Z</Time>
+            <DistanceMeters>515.7899780273438</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0350000858306885</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:12:29.000Z</Time>
+            <DistanceMeters>536.5399780273438</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0850000381469727</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:12:39.000Z</Time>
+            <DistanceMeters>557.4600219726562</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0959999561309814</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:12:49.000Z</Time>
+            <DistanceMeters>578.6599731445312</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1110000610351562</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:12:59.000Z</Time>
+            <DistanceMeters>599.6500244140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1029999256134033</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:13:09.000Z</Time>
+            <DistanceMeters>620.6400146484375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.11899995803833</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:13:19.000Z</Time>
+            <DistanceMeters>641.6900024414062</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:13:29.000Z</Time>
+            <DistanceMeters>662.47998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0880000591278076</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:13:39.000Z</Time>
+            <DistanceMeters>683.2899780273438</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.072999954223633</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:13:49.000Z</Time>
+            <DistanceMeters>704.3099975585938</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.11899995803833</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:13:59.000Z</Time>
+            <DistanceMeters>725.5700073242188</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:14:09.000Z</Time>
+            <DistanceMeters>746.75</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.125999927520752</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:14:19.000Z</Time>
+            <DistanceMeters>768.010009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:14:29.000Z</Time>
+            <DistanceMeters>789.1699829101562</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0959999561309814</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:14:39.000Z</Time>
+            <DistanceMeters>810.239990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0880000591278076</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:14:49.000Z</Time>
+            <DistanceMeters>831.0999755859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0769999027252197</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:14:59.000Z</Time>
+            <DistanceMeters>851.9199829101562</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0810000896453857</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:15:09.000Z</Time>
+            <DistanceMeters>872.9299926757812</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.138000011444092</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:15:19.000Z</Time>
+            <DistanceMeters>894.219970703125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1500000953674316</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:15:29.000Z</Time>
+            <DistanceMeters>915.4299926757812</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.069000005722046</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:15:39.000Z</Time>
+            <DistanceMeters>936.3200073242188</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1110000610351562</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:15:49.000Z</Time>
+            <DistanceMeters>957.5499877929688</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.125999927520752</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:15:59.000Z</Time>
+            <DistanceMeters>978.8200073242188</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:16:09.000Z</Time>
+            <DistanceMeters>999.9099731445312</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1029999256134033</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:16:19.000Z</Time>
+            <DistanceMeters>1020.969970703125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1029999256134033</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:16:29.000Z</Time>
+            <DistanceMeters>1042.0999755859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.125999927520752</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:16:39.000Z</Time>
+            <DistanceMeters>1063.3699951171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0850000381469727</Speed>
+                <RunCadence>75</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:16:50.000Z</Time>
+            <DistanceMeters>1084.5899658203125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8370000123977661</Speed>
+                <RunCadence>59</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:17:02.000Z</Time>
+            <DistanceMeters>1106.3199462890625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.805999994277954</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:17:14.000Z</Time>
+            <DistanceMeters>1127.7900390625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7829999923706055</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:17:26.000Z</Time>
+            <DistanceMeters>1149.1300048828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7680000066757202</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:17:38.000Z</Time>
+            <DistanceMeters>1170.3299560546875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.797999978065491</Speed>
+                <RunCadence>64</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:17:49.000Z</Time>
+            <DistanceMeters>1191.469970703125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.003999948501587</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:17:59.000Z</Time>
+            <DistanceMeters>1211.8399658203125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.069000005722046</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:18:09.000Z</Time>
+            <DistanceMeters>1232.77001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.11899995803833</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:18:19.000Z</Time>
+            <DistanceMeters>1253.68994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.072999954223633</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:18:29.000Z</Time>
+            <DistanceMeters>1274.6099853515625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0880000591278076</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:18:39.000Z</Time>
+            <DistanceMeters>1295.510009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.115000009536743</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:18:49.000Z</Time>
+            <DistanceMeters>1316.81005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1419999599456787</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:18:59.000Z</Time>
+            <DistanceMeters>1337.93994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.122999906539917</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:19:09.000Z</Time>
+            <DistanceMeters>1359.22998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.130000114440918</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:19:19.000Z</Time>
+            <DistanceMeters>1380.760009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1419999599456787</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:19:29.000Z</Time>
+            <DistanceMeters>1402.1099853515625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.138000011444092</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:19:39.000Z</Time>
+            <DistanceMeters>1423.3199462890625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.115000009536743</Speed>
+                <RunCadence>64</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:19:50.000Z</Time>
+            <DistanceMeters>1444.5999755859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8639999628067017</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:20:01.000Z</Time>
+            <DistanceMeters>1464.739990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7869999408721926</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:20:13.000Z</Time>
+            <DistanceMeters>1486.239990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.791000008583069</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:20:25.000Z</Time>
+            <DistanceMeters>1507.4100341796875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7640000581741333</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:20:37.000Z</Time>
+            <DistanceMeters>1528.6400146484375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7829999923706055</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:20:48.000Z</Time>
+            <DistanceMeters>1549.8599853515625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0460000038146973</Speed>
+                <RunCadence>75</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:20:58.000Z</Time>
+            <DistanceMeters>1570.27001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0420000553131104</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:21:08.000Z</Time>
+            <DistanceMeters>1591.22998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.138000011444092</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:21:18.000Z</Time>
+            <DistanceMeters>1612.280029296875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0810000896453857</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:21:28.000Z</Time>
+            <DistanceMeters>1633.1600341796875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1029999256134033</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:21:38.000Z</Time>
+            <DistanceMeters>1654.3800048828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.115000009536743</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:21:48.000Z</Time>
+            <DistanceMeters>1675.4300537109375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.11899995803833</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:21:58.000Z</Time>
+            <DistanceMeters>1696.5</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0920000076293945</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:22:08.000Z</Time>
+            <DistanceMeters>1717.5699462890625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.125999927520752</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:22:18.000Z</Time>
+            <DistanceMeters>1738.7900390625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:22:28.000Z</Time>
+            <DistanceMeters>1759.969970703125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.11899995803833</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:22:38.000Z</Time>
+            <DistanceMeters>1781.010009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0309998989105225</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:22:54.000Z</Time>
+            <DistanceMeters>1801.8299560546875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0609999895095825</Speed>
+                <RunCadence>51</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:22:57.000Z</Time>
+            <DistanceMeters>1804.989990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0529999732971191</Speed>
+                <RunCadence>51</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:26:45.000Z</Time>
+            <DistanceMeters>1806.5</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5099999904632568</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:26:59.000Z</Time>
+            <DistanceMeters>1827.72998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5140000581741333</Speed>
+                <RunCadence>58</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:27:13.000Z</Time>
+            <DistanceMeters>1848.969970703125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.506999969482422</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:27:27.000Z</Time>
+            <DistanceMeters>1870.030029296875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.506999969482422</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:27:41.000Z</Time>
+            <DistanceMeters>1891.1199951171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.503000020980835</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:27:55.000Z</Time>
+            <DistanceMeters>1912.31005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5180000066757204</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:28:09.000Z</Time>
+            <DistanceMeters>1933.3599853515625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4910000562667847</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:28:23.000Z</Time>
+            <DistanceMeters>1954.3299560546875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.506999969482422</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:28:37.000Z</Time>
+            <DistanceMeters>1975.5999755859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5290000438690188</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:28:48.000Z</Time>
+            <DistanceMeters>1996.81005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.052999973297119</Speed>
+                <RunCadence>75</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:28:58.000Z</Time>
+            <DistanceMeters>2017.6500244140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0959999561309814</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:29:08.000Z</Time>
+            <DistanceMeters>2039.1199951171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1619999408721924</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:29:18.000Z</Time>
+            <DistanceMeters>2060.68994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1619999408721924</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:29:28.000Z</Time>
+            <DistanceMeters>2082.3701171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.125999927520752</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:29:38.000Z</Time>
+            <DistanceMeters>2103.77001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.122999906539917</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:29:48.000Z</Time>
+            <DistanceMeters>2125.239990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1419999599456787</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:29:58.000Z</Time>
+            <DistanceMeters>2146.919921875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1760001182556152</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:30:08.000Z</Time>
+            <DistanceMeters>2168.3798828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.125999927520752</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:30:18.000Z</Time>
+            <DistanceMeters>2189.340087890625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.065000057220459</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:30:28.000Z</Time>
+            <DistanceMeters>2209.919921875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0769999027252197</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:30:38.000Z</Time>
+            <DistanceMeters>2230.570068359375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.015000104904175</Speed>
+                <RunCadence>74</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:30:50.000Z</Time>
+            <DistanceMeters>2250.8798828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5950000286102295</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:31:03.000Z</Time>
+            <DistanceMeters>2271.31005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5570000410079956</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:31:17.000Z</Time>
+            <DistanceMeters>2292.699951171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5099999904632568</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:31:31.000Z</Time>
+            <DistanceMeters>2313.830078125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4989999532699585</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:31:45.000Z</Time>
+            <DistanceMeters>2334.949951171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5099999904632568</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:31:59.000Z</Time>
+            <DistanceMeters>2356.159912109375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5140000581741333</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:32:13.000Z</Time>
+            <DistanceMeters>2377.39990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5219999551773071</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:32:27.000Z</Time>
+            <DistanceMeters>2398.77001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5219999551773071</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:32:40.000Z</Time>
+            <DistanceMeters>2419.139892578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.797999978065491</Speed>
+                <RunCadence>74</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:32:51.000Z</Time>
+            <DistanceMeters>2440.909912109375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.061000108718872</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:33:01.000Z</Time>
+            <DistanceMeters>2461.669921875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>75</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:33:11.000Z</Time>
+            <DistanceMeters>2482.840087890625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.130000114440918</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:33:21.000Z</Time>
+            <DistanceMeters>2504.280029296875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.130000114440918</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:33:31.000Z</Time>
+            <DistanceMeters>2525.610107421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.130000114440918</Speed>
+                <RunCadence>75</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:33:41.000Z</Time>
+            <DistanceMeters>2546.64990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.115000009536743</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:33:51.000Z</Time>
+            <DistanceMeters>2567.889892578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1540000438690186</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:34:01.000Z</Time>
+            <DistanceMeters>2589.25</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.134000062942505</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:34:11.000Z</Time>
+            <DistanceMeters>2610.679931640625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1579999923706055</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:34:21.000Z</Time>
+            <DistanceMeters>2631.56005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0490000247955322</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:34:31.000Z</Time>
+            <DistanceMeters>2652.429931640625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>78</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:34:41.000Z</Time>
+            <DistanceMeters>2673.0400390625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.840000033378601</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:34:54.000Z</Time>
+            <DistanceMeters>2694.43994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5870000123977661</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:35:07.000Z</Time>
+            <DistanceMeters>2714.6201171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5490000247955322</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:35:21.000Z</Time>
+            <DistanceMeters>2735.9599609375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.503000020980835</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:35:35.000Z</Time>
+            <DistanceMeters>2757.10009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5140000581741333</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:35:47.000Z</Time>
+            <DistanceMeters>2778.639892578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0269999504089355</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:35:57.000Z</Time>
+            <DistanceMeters>2799.199951171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0880000591278076</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:36:07.000Z</Time>
+            <DistanceMeters>2820.18994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0880000591278076</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:36:17.000Z</Time>
+            <DistanceMeters>2841.14990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:36:27.000Z</Time>
+            <DistanceMeters>2862.570068359375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1419999599456787</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:36:37.000Z</Time>
+            <DistanceMeters>2883.89990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.130000114440918</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:36:47.000Z</Time>
+            <DistanceMeters>2905.159912109375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1459999084472656</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:36:57.000Z</Time>
+            <DistanceMeters>2926.52001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0999999046325684</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:37:07.000Z</Time>
+            <DistanceMeters>2947.760009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1110000610351562</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:37:17.000Z</Time>
+            <DistanceMeters>2969.14990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1419999599456787</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:37:27.000Z</Time>
+            <DistanceMeters>2990.530029296875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.125999927520752</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:37:37.000Z</Time>
+            <DistanceMeters>3011.679931640625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:37:48.000Z</Time>
+            <DistanceMeters>3033.110107421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8329999446868896</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:38:00.000Z</Time>
+            <DistanceMeters>3054.52001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7719999551773071</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:38:12.000Z</Time>
+            <DistanceMeters>3075.639892578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.75600004196167</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:38:24.000Z</Time>
+            <DistanceMeters>3096.3798828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7070000171661377</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:38:36.000Z</Time>
+            <DistanceMeters>3117.0400390625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7369999885559084</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:38:48.000Z</Time>
+            <DistanceMeters>3138.179931640625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7719999551773071</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:39:00.000Z</Time>
+            <DistanceMeters>3159.139892578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7330000400543213</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:39:12.000Z</Time>
+            <DistanceMeters>3179.969970703125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7489999532699585</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:39:24.000Z</Time>
+            <DistanceMeters>3200.989990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7489999532699585</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:39:36.000Z</Time>
+            <DistanceMeters>3222.06005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7719999551773071</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:39:47.000Z</Time>
+            <DistanceMeters>3243.7900390625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.065000057220459</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:39:57.000Z</Time>
+            <DistanceMeters>3264.52001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0850000381469727</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:40:07.000Z</Time>
+            <DistanceMeters>3285.06005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0420000553131104</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:40:17.000Z</Time>
+            <DistanceMeters>3305.60009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1029999256134033</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:40:27.000Z</Time>
+            <DistanceMeters>3326.56005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1029999256134033</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:40:37.000Z</Time>
+            <DistanceMeters>3347.699951171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1070001125335693</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:40:47.000Z</Time>
+            <DistanceMeters>3368.7900390625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0810000896453857</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:40:57.000Z</Time>
+            <DistanceMeters>3389.909912109375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.125999927520752</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:41:07.000Z</Time>
+            <DistanceMeters>3411.35009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1029999256134033</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:41:17.000Z</Time>
+            <DistanceMeters>3432.080078125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0880000591278076</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:41:27.000Z</Time>
+            <DistanceMeters>3453.280029296875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.130000114440918</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:41:37.000Z</Time>
+            <DistanceMeters>3474.429931640625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.069000005722046</Speed>
+                <RunCadence>73</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:41:49.000Z</Time>
+            <DistanceMeters>3495.300048828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5950000286102295</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:42:02.000Z</Time>
+            <DistanceMeters>3515.6201171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5490000247955322</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:42:15.000Z</Time>
+            <DistanceMeters>3535.830078125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5449999570846558</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:42:29.000Z</Time>
+            <DistanceMeters>3557.219970703125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5180000066757204</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:42:43.000Z</Time>
+            <DistanceMeters>3578.6298828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5329999923706055</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:42:57.000Z</Time>
+            <DistanceMeters>3600.110107421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5329999923706055</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:43:11.000Z</Time>
+            <DistanceMeters>3621.489990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5249999761581423</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:43:24.000Z</Time>
+            <DistanceMeters>3641.610107421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5609999895095827</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:43:37.000Z</Time>
+            <DistanceMeters>3661.830078125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.6019999980926514</Speed>
+                <RunCadence>60</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:43:48.000Z</Time>
+            <DistanceMeters>3683.330078125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0769999027252197</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:43:58.000Z</Time>
+            <DistanceMeters>3704.14990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.115000009536743</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:44:08.000Z</Time>
+            <DistanceMeters>3725.47998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1419999599456787</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:44:18.000Z</Time>
+            <DistanceMeters>3746.840087890625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.11899995803833</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:44:28.000Z</Time>
+            <DistanceMeters>3768.39990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.11899995803833</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:44:38.000Z</Time>
+            <DistanceMeters>3789.840087890625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.122999906539917</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:44:48.000Z</Time>
+            <DistanceMeters>3810.800048828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.072999954223633</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:44:58.000Z</Time>
+            <DistanceMeters>3831.669921875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0959999561309814</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:45:08.000Z</Time>
+            <DistanceMeters>3852.320068359375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0350000858306885</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:45:18.000Z</Time>
+            <DistanceMeters>3873.090087890625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.065000057220459</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:45:28.000Z</Time>
+            <DistanceMeters>3894.070068359375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1029999256134033</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:45:38.000Z</Time>
+            <DistanceMeters>3915.219970703125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0380001068115234</Speed>
+                <RunCadence>73</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:45:50.000Z</Time>
+            <DistanceMeters>3935.7099609375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.6059999465942383</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:46:03.000Z</Time>
+            <DistanceMeters>3956.300048828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5609999895095827</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:46:16.000Z</Time>
+            <DistanceMeters>3976.360107421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5490000247955322</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:46:29.000Z</Time>
+            <DistanceMeters>3996.389892578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5180000066757204</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:46:43.000Z</Time>
+            <DistanceMeters>4017.75</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5369999408721924</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:46:56.000Z</Time>
+            <DistanceMeters>4037.860107421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5369999408721924</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:47:09.000Z</Time>
+            <DistanceMeters>4057.889892578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5449999570846558</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:47:22.000Z</Time>
+            <DistanceMeters>4078.010009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5529999732971191</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:47:35.000Z</Time>
+            <DistanceMeters>4098.18017578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5490000247955322</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:47:48.000Z</Time>
+            <DistanceMeters>4118.47021484375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5640000104904175</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:48:01.000Z</Time>
+            <DistanceMeters>4138.669921875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5570000410079956</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:48:14.000Z</Time>
+            <DistanceMeters>4158.8701171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5529999732971191</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:48:27.000Z</Time>
+            <DistanceMeters>4179.009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5490000247955322</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:48:40.000Z</Time>
+            <DistanceMeters>4199.93017578125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.878999948501587</Speed>
+                <RunCadence>73</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:48:51.000Z</Time>
+            <DistanceMeters>4221.830078125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0460000038146973</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:49:01.000Z</Time>
+            <DistanceMeters>4242.740234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0380001068115234</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:49:11.000Z</Time>
+            <DistanceMeters>4263.35009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.115000009536743</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:49:21.000Z</Time>
+            <DistanceMeters>4284.6201171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.138000011444092</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:49:31.000Z</Time>
+            <DistanceMeters>4306.3701171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.191999912261963</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:49:41.000Z</Time>
+            <DistanceMeters>4328.2900390625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.187999963760376</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:49:51.000Z</Time>
+            <DistanceMeters>4350.22998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.171999931335449</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:50:01.000Z</Time>
+            <DistanceMeters>4371.75</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.122999906539917</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:50:11.000Z</Time>
+            <DistanceMeters>4393.27001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1579999923706055</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:50:21.000Z</Time>
+            <DistanceMeters>4414.7998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.115000009536743</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:50:31.000Z</Time>
+            <DistanceMeters>4435.93994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.11899995803833</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:50:41.000Z</Time>
+            <DistanceMeters>4456.56982421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.056999921798706</Speed>
+                <RunCadence>77</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:50:51.000Z</Time>
+            <DistanceMeters>4477.8701171875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1579999923706055</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:51:01.000Z</Time>
+            <DistanceMeters>4498.72021484375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.010999917984009</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:51:11.000Z</Time>
+            <DistanceMeters>4519.22998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.0309998989105225</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:51:21.000Z</Time>
+            <DistanceMeters>4540.33984375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1540000438690186</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:51:31.000Z</Time>
+            <DistanceMeters>4562.18994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.203000068664551</Speed>
+                <RunCadence>76</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:51:41.000Z</Time>
+            <DistanceMeters>4583.85009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.069000005722046</Speed>
+                <RunCadence>74</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:51:51.000Z</Time>
+            <DistanceMeters>4603.93994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.9639999866485596</Speed>
+                <RunCadence>74</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:52:02.000Z</Time>
+            <DistanceMeters>4625.27001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.9329999685287476</Speed>
+                <RunCadence>73</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:52:13.000Z</Time>
+            <DistanceMeters>4646.509765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.9170000553131106</Speed>
+                <RunCadence>74</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:52:24.000Z</Time>
+            <DistanceMeters>4667.56005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.937000036239624</Speed>
+                <RunCadence>74</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:52:35.000Z</Time>
+            <DistanceMeters>4689.16015625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.9559999704360964</Speed>
+                <RunCadence>74</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:52:46.000Z</Time>
+            <DistanceMeters>4710.1298828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8910000324249268</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:52:57.000Z</Time>
+            <DistanceMeters>4730.47998046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8220000267028809</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:53:08.000Z</Time>
+            <DistanceMeters>4750.77978515625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8519999980926516</Speed>
+                <RunCadence>62</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:53:19.000Z</Time>
+            <DistanceMeters>4771.10009765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8680000305175781</Speed>
+                <RunCadence>62</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:53:30.000Z</Time>
+            <DistanceMeters>4791.6298828125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8680000305175781</Speed>
+                <RunCadence>61</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:53:41.000Z</Time>
+            <DistanceMeters>4811.77001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7489999532699585</Speed>
+                <RunCadence>58</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:53:53.000Z</Time>
+            <DistanceMeters>4832.0400390625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.6410000324249268</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:54:06.000Z</Time>
+            <DistanceMeters>4852.990234375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5950000286102295</Speed>
+                <RunCadence>57</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:54:19.000Z</Time>
+            <DistanceMeters>4873.77001953125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.6059999465942383</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:54:32.000Z</Time>
+            <DistanceMeters>4894.68994140625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.6059999465942383</Speed>
+                <RunCadence>56</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:54:46.000Z</Time>
+            <DistanceMeters>4916.0498046875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4140000343322752</Speed>
+                <RunCadence>54</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:55:01.000Z</Time>
+            <DistanceMeters>4936.56005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.3300000429153442</Speed>
+                <RunCadence>52</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:55:17.000Z</Time>
+            <DistanceMeters>4957.759765625</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.3070000410079956</Speed>
+                <RunCadence>52</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:55:33.000Z</Time>
+            <DistanceMeters>4978.56005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.2760000228881836</Speed>
+                <RunCadence>52</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:55:51.000Z</Time>
+            <DistanceMeters>4999.2099609375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0529999732971191</Speed>
+                <RunCadence>48</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:56:12.000Z</Time>
+            <DistanceMeters>5020.06005859375</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0069999694824219</Speed>
+                <RunCadence>49</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:56:32.000Z</Time>
+            <DistanceMeters>5040.31982421875</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0069999694824219</Speed>
+                <RunCadence>48</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2014-07-26T19:56:34.000Z</Time>
+            <DistanceMeters>5042.330078125</DistanceMeters>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0110000371932983</Speed>
+                <RunCadence>48</RunCadence>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+        </Track>
+        <Extensions>
+          <LX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+            <MaxRunCadence>78</MaxRunCadence>
+          </LX>
+          <LX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+            <AvgRunCadence>66</AvgRunCadence>
+          </LX>
+          <LX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+            <AvgSpeed>1.8209999799728394</AvgSpeed>
+          </LX>
+          <LX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+            <Steps>6132</Steps>
+          </LX>
+        </Extensions>
+      </Lap>
+      <Creator xsi:type="Device_t">
+        <Name>Garmin Forerunner 310XT</Name>
+        <UnitId>3826588013</UnitId>
+        <ProductID>1018</ProductID>
+        <Version>
+          <VersionMajor>4</VersionMajor>
+          <VersionMinor>50</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Activity>
+  </Activities>
+  <Author xsi:type="Application_t">
+    <Name>Garmin Connect API</Name>
+    <Build>
+      <Version>
+        <VersionMajor>14</VersionMajor>
+        <VersionMinor>7</VersionMinor>
+        <BuildMajor>0</BuildMajor>
+        <BuildMinor>0</BuildMinor>
+      </Version>
+    </Build>
+    <LangID>en</LangID>
+    <PartNumber>006-D2449-00</PartNumber>
+  </Author>
+</TrainingCenterDatabase>
