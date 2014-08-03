@@ -6,6 +6,48 @@ $garmin_file = "20140726/activity_running_garmin.tcx";
 $wahoo_xml = simplexml_load_file($wahoo_file); 
 $garmin_xml = simplexml_load_file($garmin_file); 
 
+// Functions Start
+function flatten_array($array, $preserve_keys = 0, &$out = array()) {
+    # Flatten a multidimensional array to one dimension, optionally preserving keys.
+    #
+    # $array - the array to flatten
+    # $preserve_keys - 0 (default) to not preserve keys, 1 to preserve string keys only, 2 to preserve all keys
+    # $out - internal use argument for recursion
+    foreach($array as $key => $child)
+        if(is_array($child))
+            $out = flatten_array($child, $preserve_keys, $out);
+        elseif($preserve_keys + is_string($key) > 1)
+            $out[$key] = $child;
+        else
+            $out[] = $child;
+    return $out;
+}
+
+function str_replace_json($search, $replace, $subject){ 
+     return json_decode(str_replace($search, $replace,  json_encode($subject))); 
+
+}
+
+function simplexml_merge(SimpleXMLElement &$xml1, SimpleXMLElement $xml2) {
+        // convert SimpleXML objects into DOM ones
+        $dom1 = new DomDocument('1.0', 'UTF-8');
+        $dom2 = new DomDocument('1.0', 'UTF-8');
+
+        $dom1->loadXML($xml1->asXML());
+        $dom2->loadXML($xml2->asXML());
+        // pull all child elements of second XML
+        $xpath = new domXPath($dom2);
+        $xpathQuery = $xpath->query('/*/*');
+        for ($i = 0; $i < $xpathQuery->length; $i++) {
+            // and pump them into first one
+            $dom1->documentElement->appendChild(
+                $dom1->importNode($xpathQuery->item($i), true));
+        }
+        $xml1 = simplexml_import_dom($dom1);
+
+
+//Functions End
+ 
 //$xml2 = simplexml_load_file( $file2 );	
 //	foreach( $xml2->FOO as $foo ) {
 //		$new = $xml1->addChild( 'FOO' , $foo );
@@ -14,15 +56,27 @@ $garmin_xml = simplexml_load_file($garmin_file);
 //		}
 
     
-//echo $wahoo_xml->Activities->Activity->Id;
-//echo $wahoo_xml->Activities->Activity->Lap->TotalTimeSeconds;
-
-foreach ($wahoo_xml->Activities->Activity->Lap->Track->Trackpoint->Array()->Time as $value){  
- echo $value;
-}
+$wahoo_xml_new = flatten_array($wahoo_xml->Activities->Activity->Lap->Track->Trackpoint);
+$wahoo_xml_new = str_replace_json('Z', '.00Z', $wahoo_xml_new);
+$garmin_xml_new = flatten_array($garmin_xml->Activities->Activity->Lap->Track->Trackpoint);
 
 
-$wahoo_xml_new = str_ireplace("Z", ".00Z", $wahoo_xml);
+//$result = array();
+//foreach( $garmin_xml_new->Time as $keyA => $valA ) {
+  //foreach( $wahoo_xml_new->Time as $keyB => $valB ) {
+     //if( $valA['id'] == $valB['id'] ) {
+       //$result[$keyA] = $valA + $valB;
+
+       // or if you do not care output keys, just
+       // $result[] = $valA + $valB;
+     //}
+  //}
+//}
+
+
+//foreach ($wahoo_xml_new as $key => $value){  
+ //echo $value;
+//}
 
 $xml = new DOMDocument('1.0', 'utf-8');
 header("Content-Type: text/plain");
@@ -154,8 +208,11 @@ $xml->preserveWhiteSpace = false;
 $xml->formatOutput = true;
 //$xml->loadXML($simpleXml->asXML());
 //echo $xml->saveXML();
-$xml->save("test.xml");
+//$xml->save("test.xml");
+
+simplexml_merge($garmin_xml_new, $wahoo_xml_new);
+$xml1>asXml('output.xml');
 //echo $garmin_xml->Activities->Activity->Lap->TotalTimeSeconds
-//print_r($arr); 
-print_r($wahoo_xml); 
+//print_r($wahoo_xml_new); 
+//print_r($result); 
 ?>
