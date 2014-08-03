@@ -13,32 +13,64 @@ $garmin_xml = simplexml_load_file($garmin_file);
 //			$new->addAttribute( $key, $value );
 //		}
 
-$wahoo_xml_new = str_replace('Z', '00Z', $wahoo_xml);
     
 //echo $wahoo_xml->Activities->Activity->Id;
 //echo $wahoo_xml->Activities->Activity->Lap->TotalTimeSeconds;
-//foreach ($wahoo_xml->Activities->Activity->Lap->Track->Trackpoint->Time as $value){ 
-// echo $value;
-//}
-//echo '<pre>';
-//echo "<br>";
-//echo "<TrainingCenterDatabase";
-//echo 'xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"';
 
-//$xml_tcd = $xml->createElement("TrainingCenterDatabase\
- //xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2\
-//http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"\
-  //xmlns:ns5="http://www.garmin.com/xmlschemas/ActivityGoals/v1"\
-  //xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2"\
-  //xmlns:ns2="http://www.garmin.com/xmlschemas/UserProfile/v2"\
-  //xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"\
-  //xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns4="http://www.garmin.com/xmlschemas/ProfileExtension/v1");
-//$xml_tcd->appendChild( $xml_activities);
+foreach ($wahoo_xml->Activities->Activity->Lap->Track->Trackpoint->Array()->Time as $value){  
+ echo $value;
+}
+
+
+$wahoo_xml_new = str_ireplace("Z", ".00Z", $wahoo_xml);
 
 $xml = new DOMDocument('1.0', 'utf-8');
 header("Content-Type: text/plain");
+
+$xml_tcd = $xml->createElement("TrainingCenterDatabase");
+$xml->appendChild($xml_tcd);
+
+// Start all the garmin info
+$xml_tcd_act1 = $xml->createAttribute("xsi:schemaLocation");
+$xml_tcd->appendChild($xml_tcd_act1);
+$xml_tcd_val1 = $xml->createTextNode("http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2");
+$xml_tcd_act1->appendChild($xml_tcd_val1);
+
+$xml_tcd_act2 = $xml->createAttribute("xmlns:ns5");
+$xml_tcd->appendChild($xml_tcd_act2);
+$xml_tcd_val2 = $xml->createTextNode("http://www.garmin.com/xmlschemas/ActivityGoals/v1");
+$xml_tcd_act2->appendChild($xml_tcd_val2);
+
+$xml_tcd_act3 = $xml->createAttribute("xmlns:ns4");
+$xml_tcd->appendChild($xml_tcd_act3);
+$xml_tcd_val3 = $xml->createTextNode("http://www.garmin.com/xmlschemas/ProfileExtension/v1");
+$xml_tcd_act3->appendChild($xml_tcd_val3);
+
+$xml_tcd_act4 = $xml->createAttribute("xmlns:ns3");
+$xml_tcd->appendChild($xml_tcd_act4);
+$xml_tcd_val4 = $xml->createTextNode("http://www.garmin.com/xmlschemas/ActivityExtension/v2");
+$xml_tcd_act4->appendChild($xml_tcd_val4);
+
+$xml_tcd_act5 = $xml->createAttribute("xmlns:ns2");
+$xml_tcd->appendChild($xml_tcd_act5);
+$xml_tcd_val5 = $xml->createTextNode("http://www.garmin.com/xmlschemas/UserProfile/v2");
+$xml_tcd_act5->appendChild($xml_tcd_val5);
+
+$xml_tcd_act6 = $xml->createAttribute("xmlns");
+$xml_tcd->appendChild($xml_tcd_act6);
+$xml_tcd_val6 = $xml->createTextNode("http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2");
+$xml_tcd_act6->appendChild($xml_tcd_val6);
+
+$xml_tcd_act7 = $xml->createAttribute("xmlns:xsi");
+$xml_tcd->appendChild($xml_tcd_act7);
+$xml_tcd_val7 = $xml->createTextNode("http://www.w3.org/2001/XMLSchema-instance");
+$xml_tcd_act7->appendChild($xml_tcd_val7);
+
+
+// End garmin info
+
 $xml_activities = $xml->createElement("Activites");
-$xml->appendChild($xml_activities);
+$xml_tcd->appendChild($xml_activities);
 
 //Creating the activity
 $xml_sport = $xml->createElement("Activity");
@@ -59,7 +91,7 @@ $xml_lap = $xml->createElement("Lap");
 $xml_sport->appendChild($xml_lap);
 $xml_lap_start = $xml->createAttribute("Start");
 $xml_lap->appendChild($xml_lap_start);
-$xml_lap_val = $xml->createTextNode("Some val here");
+$xml_lap_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->attributes()->StartTime);
 $xml_lap_start->appendChild($xml_lap_val);
 
 //Creating the totals
