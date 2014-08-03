@@ -6,7 +6,14 @@ $garmin_file = "20140726/activity_running_garmin.tcx";
 $wahoo_xml = simplexml_load_file($wahoo_file); 
 $garmin_xml = simplexml_load_file($garmin_file); 
 
+//$xml2 = simplexml_load_file( $file2 );	
+//	foreach( $xml2->FOO as $foo ) {
+//		$new = $xml1->addChild( 'FOO' , $foo );
+//		foreach( $foo->attributes() as $key => $value ) {
+//			$new->addAttribute( $key, $value );
+//		}
 
+$wahoo_xml_new = str_replace('Z', '00Z', $wahoo_xml);
     
 //echo $wahoo_xml->Activities->Activity->Id;
 //echo $wahoo_xml->Activities->Activity->Lap->TotalTimeSeconds;
@@ -117,5 +124,6 @@ $xml->formatOutput = true;
 //echo $xml->saveXML();
 $xml->save("test.xml");
 //echo $garmin_xml->Activities->Activity->Lap->TotalTimeSeconds
-//print_r($garmin_xml); 
+//print_r($arr); 
+print_r($wahoo_xml); 
 ?>
