@@ -369,7 +369,16 @@ $xml_aut_act->appendChild($xml_aut_val);
       $xml_bu_bmi_val = $xml->createTextNode("0");
       $xml_bu_bmi->appendChild($xml_bu_bmi_val);
 
+  $xml_lang = $xml->createElement("LangID");
+  $xml_aut->appendChild($xml_lang);
+  $xml_lang_val = $xml->createTextNode("en");
+  $xml_lang->appendChild($xml_lang_val);
   
+  $xml_part = $xml->createElement("PartNumber");
+  $xml_aut->appendChild($xml_part);
+  $xml_part_val = $xml->createTextNode("en");
+  $xml_part->appendChild($xml_part_val);
+
 $xml->preserveWhiteSpace = false;
 $xml->formatOutput = true;
 //$xml->loadXML($simpleXml->asXML());
