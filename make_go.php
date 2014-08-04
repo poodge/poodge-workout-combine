@@ -30,9 +30,10 @@ function str_replace_json($search, $replace, $subject){
 
 function searchForHR($id, $array) {
    foreach ($array as $val) {
-       $time = substr($val, 0, 18);
-       if ($time = $id) {
-           $hr = ($val['HeartRateBpm']['Value']);
+       $time = substr($id, 0, 19) . "Z";
+       //echo "whaoo time is $val->Time   garmin time is $time";
+       if ($time == $val->Time) {
+           $hr = ($val->HeartRateBpm->Value);
            return $hr;
        }
    }
@@ -201,6 +202,7 @@ foreach ($garmin_xml_new as $row) {
  $time = $row->Time;
  $distance = $row->DistanceMeters;
  $hr = searchForHR($time, $wahoo_xml_new);
+ //$hr = 0;
  if (isset($speed)) {
    //Getting Time
    $xml_time = $xml->createElement("Time");
@@ -210,13 +212,22 @@ foreach ($garmin_xml_new as $row) {
 
    //Getting Distance
    $xml_dis = $xml->createElement("DistanceMeters");
-   $xml_time->appendChild($xml_dis);
+   $xml_tp->appendChild($xml_dis);
    $xml_dis_val = $xml->createTextNode($distance);
    $xml_dis->appendChild($xml_dis_val);
+
+   //Getting HeartRate
+   $xml_hr = $xml->createElement("HeartRateBpm");
+   $xml_tp->appendChild($xml_hr);
+   $xml_hr_val = $xml->createElement("Value");
+   $xml_hr->appendChild($xml_hr_val);
+   $xml_hr_val_val = $xml->createTextNode($hr);
+   $xml_hr_val->appendChild($xml_hr_val_val);
+   
    
    //Setting up some more static info
    $xml_ext = $xml->createElement("Extensions");
-   $xml_time->appendChild($xml_ext);
+   $xml_tp->appendChild($xml_ext);
    $xml_tpx = $xml->createElement("TPX");
    $xml_ext->appendChild($xml_tpx);
    $xml_tpx_act = $xml->createAttribute("xmlns");
@@ -236,14 +247,129 @@ foreach ($garmin_xml_new as $row) {
    $xml_cad_val = $xml->createTextNode($cadence);
    $xml_cad->appendChild($xml_cad_val);
 
-   //Getting Wahoo data
-   
-   
-
  }
-  echo "Speed is $speed, time is $time, cadence is $cadence, and distance is $distance HR is $hr ";
+  //echo "Speed is $speed, time is $time, cadence is $cadence, and distance is $distance HR is $hr ";
 }
 
+//Getting the rest of the data
+$xml_tot_ext = $xml->createElement("Extensions");
+$xml_lap->appendChild($xml_tot_ext);
+$xml_lx1 = $xml->createElement("LX");
+$xml_tot_ext->appendChild($xml_lx1);
+$xml_lx1_act = $xml->createAttribute("xmlns");
+$xml_lx1->appendChild($xml_lx1_act);
+$xml_lx1_val = $xml->createTextNode("http://www.garmin.com/xmlschemas/ActivityExtension/v2");
+$xml_lx1_act->appendChild($xml_lx1_val);
+  $xml_maxruncad = $xml->createElement("MaxRunCadence");
+  $xml_lx1->appendChild($xml_maxruncad);
+  $xml_maxruncad_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->Extensions->LX[0]->MaxRunCadence);
+  $xml_maxruncad->appendChild($xml_maxruncad_val);
+
+
+$xml_lx2 = $xml->createElement("LX");
+$xml_tot_ext->appendChild($xml_lx2);
+$xml_lx2_act = $xml->createAttribute("xmlns");
+$xml_lx2->appendChild($xml_lx2_act);
+$xml_lx2_val = $xml->createTextNode("http://www.garmin.com/xmlschemas/ActivityExtension/v2");
+$xml_lx2_act->appendChild($xml_lx2_val);
+  $xml_avgruncad = $xml->createElement("AvgRunCadence");
+  $xml_lx2->appendChild($xml_avgruncad);
+  $xml_avgruncad_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->Extensions->LX[1]->AvgRunCadence);
+  $xml_avgruncad->appendChild($xml_avgruncad_val);
+  
+$xml_lx3 = $xml->createElement("LX");
+$xml_tot_ext->appendChild($xml_lx3);
+$xml_lx3_act = $xml->createAttribute("xmlns");
+$xml_lx3->appendChild($xml_lx3_act);
+$xml_lx3_val = $xml->createTextNode("http://www.garmin.com/xmlschemas/ActivityExtension/v2");
+$xml_lx3_act->appendChild($xml_lx3_val);
+  $xml_avgspeed = $xml->createElement("AvgSpeed");
+  $xml_lx3->appendChild($xml_avgspeed);
+  $xml_avgspeed_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->Extensions->LX[2]->AvgSpeed);
+  $xml_avgspeed->appendChild($xml_avgspeed_val);
+  
+$xml_lx4 = $xml->createElement("LX");
+$xml_tot_ext->appendChild($xml_lx4);
+$xml_lx4_act = $xml->createAttribute("xmlns");
+$xml_lx4->appendChild($xml_lx4_act);
+$xml_lx4_val = $xml->createTextNode("http://www.garmin.com/xmlschemas/ActivityExtension/v2");
+$xml_lx4_act->appendChild($xml_lx4_val);
+  $xml_steps = $xml->createElement("Steps");
+  $xml_lx4->appendChild($xml_steps);
+  $xml_steps_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->Extensions->LX[3]->Steps);
+  $xml_steps->appendChild($xml_steps_val);
+
+//Finish with static info
+$xml_cre = $xml->createElement("Creator");
+$xml_sport->appendChild($xml_cre);
+$xml_cre_act = $xml->createAttribute("xsi:type");
+$xml_cre->appendChild($xml_cre_act);
+$xml_cre_val = $xml->createTextNode("Device_t");
+$xml_cre_act->appendChild($xml_cre_val);
+  $xml_name = $xml->createElement("Name");
+  $xml_cre->appendChild($xml_name);
+  $xml_name_val = $xml->createTextNode("Garmin Forerunner 310XT");
+  $xml_name->appendChild($xml_name_val);
+  $xml_unit = $xml->createElement("UnitId");
+  $xml_cre->appendChild($xml_unit);
+  $xml_unit_val = $xml->createTextNode("3826588013");
+  $xml_unit->appendChild($xml_unit_val);
+  $xml_pi = $xml->createElement("ProductID");
+  $xml_cre->appendChild($xml_pi);
+  $xml_pi_val = $xml->createTextNode("1018");
+  $xml_pi->appendChild($xml_pi_val);
+  $xml_ver = $xml->createElement("Version");
+  $xml_cre->appendChild($xml_ver);
+    $xml_vma = $xml->createElement("VersionMajor");
+    $xml_ver->appendChild($xml_vma);
+    $xml_vma_val = $xml->createTextNode("4");
+    $xml_vma->appendChild($xml_vma_val);
+    $xml_vmi = $xml->createElement("VersionMinor");
+    $xml_ver->appendChild($xml_vmi);
+    $xml_vmi_val = $xml->createTextNode("50");
+    $xml_vmi->appendChild($xml_vmi_val);
+    $xml_bma = $xml->createElement("BuildMajor");
+    $xml_ver->appendChild($xml_bma);
+    $xml_bma_val = $xml->createTextNode("0");
+    $xml_bma->appendChild($xml_bma_val);
+    $xml_bmi = $xml->createElement("BuildMinor");
+    $xml_ver->appendChild($xml_bmi);
+    $xml_bmi_val = $xml->createTextNode("0");
+    $xml_bmi->appendChild($xml_bmi_val);
+
+
+$xml_aut = $xml->createElement("Author");
+$xml_tcd->appendChild($xml_aut);
+$xml_aut_act = $xml->createAttribute("xsi:type");
+$xml_aut->appendChild($xml_aut_act);
+$xml_aut_val = $xml->createTextNode("Application_t");
+$xml_aut_act->appendChild($xml_aut_val);
+  $xml_aut_name = $xml->createElement("Name");
+  $xml_aut->appendChild($xml_aut_name);
+  $xml_aut_name_val = $xml->createTextNode("Garmin Connect API");
+  $xml_aut_name->appendChild($xml_aut_name_val);
+    $xml_bu = $xml->createElement("Build");
+    $xml_aut->appendChild($xml_bu);
+    $xml_bu_ver = $xml->createElement("Version");
+    $xml_bu->appendChild($xml_bu_ver);
+      $xml_bu_vma = $xml->createElement("VersionMajor");
+      $xml_bu_ver->appendChild($xml_bu_vma);
+      $xml_bu_vma_val = $xml->createTextNode("14");
+      $xml_bu_vma->appendChild($xml_bu_vma_val);
+      $xml_bu_vmi = $xml->createElement("VersionMinor");
+      $xml_bu_ver->appendChild($xml_bu_vmi);
+      $xml_bu_vmi_val = $xml->createTextNode("7");
+      $xml_bu_vmi->appendChild($xml_bu_vmi_val);
+      $xml_bu_bma = $xml->createElement("BuildMajor");
+      $xml_bu_ver->appendChild($xml_bu_bma);
+      $xml_bu_bma_val = $xml->createTextNode("0");
+      $xml_bu_bma->appendChild($xml_bu_bma_val);
+      $xml_bu_bmi = $xml->createElement("BuildMinor");
+      $xml_bu_ver->appendChild($xml_bu_bmi);
+      $xml_bu_bmi_val = $xml->createTextNode("0");
+      $xml_bu_bmi->appendChild($xml_bu_bmi_val);
+
+  
 $xml->preserveWhiteSpace = false;
 $xml->formatOutput = true;
 //$xml->loadXML($simpleXml->asXML());
@@ -251,7 +377,7 @@ $xml->formatOutput = true;
 $xml->save("test.xml");
 
 //echo $garmin_xml->Activities->Activity->Lap->TotalTimeSeconds
-//print_r($garmin_xml_new); 
+//print_r($garmin_xml); 
 
 
 ?>
