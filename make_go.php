@@ -43,7 +43,6 @@ $wahoo_xml_new = flatten_array($wahoo_xml->Activities->Activity->Lap->Track->Tra
 $wahoo_xml_new = str_replace_json('Z', '.00Z', $wahoo_xml_new);
 $garmin_xml_new = flatten_array($garmin_xml->Activities->Activity->Lap->Track->Trackpoint);
 
-
 //$result = array();
 //foreach( $garmin_xml_new->Time as $keyA => $valA ) {
   //foreach( $wahoo_xml_new->Time as $keyB => $valB ) {
@@ -56,7 +55,6 @@ $garmin_xml_new = flatten_array($garmin_xml->Activities->Activity->Lap->Track->T
   //}
 //}
 
-var_dump($wahoo_xml_new);
 
 $xml = new DOMDocument('1.0', 'utf-8');
 header("Content-Type: text/plain");
@@ -183,16 +181,45 @@ $xml_lap->appendChild($xml_tm);
 $xml_tm_val = $xml->createTextNode("Manual");
 $xml_tm->appendChild($xml_tm_val);
 
+//Track and Trackpoint
+$xml_t = $xml->createElement("Track");
+$xml_lap->appendChild($xml_t);
+$xml_tp = $xml->createElement("TrackPoint");
+$xml_t->appendChild($xml_tp);
+
+
+//Creating Loop for getting all the times
+$seq=0;
+foreach ($garmin_xml_new as $row) {
+ $speed = $row->Extensions->TPX->Speed;
+ $cadence = $row->Extensions->TPX->RunCadence;
+ $time = $row->Time;
+ $distance = $row->DistanceMeters;
+ if (isset($speed)) {
+   //Getting Time
+   $xml_time = $xml->createElement("Time");
+   $xml_lap->appendChild($xml_time);
+   $xml_time_val = $xml->createTextNode($time);
+   $xml_time->appendChild($xml_time_val);
+
+   //Getting Distance
+   $xml_dis = $xml->createElement("DistanceMeters");
+   $xml_lap->appendChild($xml_dis);
+   $xml_dis_val = $xml->createTextNode($distance);
+   $xml_dis->appendChild($xml_dis_val);
+   
+ }
+ // echo "Speed is $speed, time is $time, cadence is $cadence, and distance is $distance ";
+}
 
 $xml->preserveWhiteSpace = false;
 $xml->formatOutput = true;
 //$xml->loadXML($simpleXml->asXML());
 //echo $xml->saveXML();
-//$xml->save("test.xml");
+$xml->save("test.xml");
 
 //echo $garmin_xml->Activities->Activity->Lap->TotalTimeSeconds
-//print_r($wahoo_xml_new2); 
-foreach ($wahoo_xml_new as $key => $value) {
-    echo "$key = $value\n";
-}
+//print_r($garmin_xml_new); 
+
+
 ?>
