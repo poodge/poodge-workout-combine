@@ -28,23 +28,6 @@ function str_replace_json($search, $replace, $subject){
 
 }
 
-function simplexml_merge(SimpleXMLElement &$xml1, SimpleXMLElement $xml2) {
-        // convert SimpleXML objects into DOM ones
-        $dom1 = new DomDocument('1.0', 'UTF-8');
-        $dom2 = new DomDocument('1.0', 'UTF-8');
-
-        $dom1->loadXML($xml1->asXML());
-        $dom2->loadXML($xml2->asXML());
-        // pull all child elements of second XML
-        $xpath = new domXPath($dom2);
-        $xpathQuery = $xpath->query('/*/*');
-        for ($i = 0; $i < $xpathQuery->length; $i++) {
-            // and pump them into first one
-            $dom1->documentElement->appendChild(
-                $dom1->importNode($xpathQuery->item($i), true));
-        }
-        $xml1 = simplexml_import_dom($dom1);
-
 
 //Functions End
  
@@ -73,10 +56,7 @@ $garmin_xml_new = flatten_array($garmin_xml->Activities->Activity->Lap->Track->T
   //}
 //}
 
-
-//foreach ($wahoo_xml_new as $key => $value){  
- //echo $value;
-//}
+var_dump($wahoo_xml_new);
 
 $xml = new DOMDocument('1.0', 'utf-8');
 header("Content-Type: text/plain");
@@ -210,9 +190,9 @@ $xml->formatOutput = true;
 //echo $xml->saveXML();
 //$xml->save("test.xml");
 
-simplexml_merge($garmin_xml_new, $wahoo_xml_new);
-$xml1>asXml('output.xml');
 //echo $garmin_xml->Activities->Activity->Lap->TotalTimeSeconds
-//print_r($wahoo_xml_new); 
-//print_r($result); 
+//print_r($wahoo_xml_new2); 
+foreach ($wahoo_xml_new as $key => $value) {
+    echo "$key = $value\n";
+}
 ?>
