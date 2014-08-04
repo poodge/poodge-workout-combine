@@ -28,19 +28,22 @@ function str_replace_json($search, $replace, $subject){
 
 }
 
-
+function searchForHR($id, $array) {
+   foreach ($array as $val) {
+       $time = substr($val, 0, 18);
+       if ($time = $id) {
+           $hr = ($val['HeartRateBpm']['Value']);
+           return $hr;
+       }
+   }
+   return null;
+}
 //Functions End
  
-//$xml2 = simplexml_load_file( $file2 );	
-//	foreach( $xml2->FOO as $foo ) {
-//		$new = $xml1->addChild( 'FOO' , $foo );
-//		foreach( $foo->attributes() as $key => $value ) {
-//			$new->addAttribute( $key, $value );
-//		}
 
-    
+//Flattening Arrays and making wahoo time match garmin
 $wahoo_xml_new = flatten_array($wahoo_xml->Activities->Activity->Lap->Track->Trackpoint);
-$wahoo_xml_new = str_replace_json('Z', '.00Z', $wahoo_xml_new);
+//$wahoo_xml_new = str_replace_json('Z', '.00Z', $wahoo_xml_new);
 $garmin_xml_new = flatten_array($garmin_xml->Activities->Activity->Lap->Track->Trackpoint);
 
 //$result = array();
@@ -191,25 +194,54 @@ $xml_t->appendChild($xml_tp);
 //Creating Loop for getting all the times
 $seq=0;
 foreach ($garmin_xml_new as $row) {
+ $xml->preserveWhiteSpace = false;
+ $xml->formatOutput = true;
  $speed = $row->Extensions->TPX->Speed;
  $cadence = $row->Extensions->TPX->RunCadence;
  $time = $row->Time;
  $distance = $row->DistanceMeters;
+ $hr = searchForHR($time, $wahoo_xml_new);
  if (isset($speed)) {
    //Getting Time
    $xml_time = $xml->createElement("Time");
-   $xml_lap->appendChild($xml_time);
+   $xml_tp->appendChild($xml_time);
    $xml_time_val = $xml->createTextNode($time);
    $xml_time->appendChild($xml_time_val);
 
    //Getting Distance
    $xml_dis = $xml->createElement("DistanceMeters");
-   $xml_lap->appendChild($xml_dis);
+   $xml_time->appendChild($xml_dis);
    $xml_dis_val = $xml->createTextNode($distance);
    $xml_dis->appendChild($xml_dis_val);
    
+   //Setting up some more static info
+   $xml_ext = $xml->createElement("Extensions");
+   $xml_time->appendChild($xml_ext);
+   $xml_tpx = $xml->createElement("TPX");
+   $xml_ext->appendChild($xml_tpx);
+   $xml_tpx_act = $xml->createAttribute("xmlns");
+   $xml_tpx->appendChild($xml_tpx_act);
+   $xml_tpx_val = $xml->createTextNode("http://www.garmin.com/xmlschemas/ActivityExtension/v2");
+   $xml_tpx_act->appendChild($xml_tpx_val);
+   
+   //Getting Speed
+   $xml_speed = $xml->createElement("Speed");
+   $xml_tpx->appendChild($xml_speed);
+   $xml_speed_val = $xml->createTextNode($speed);
+   $xml_speed->appendChild($xml_speed_val);
+
+   //Getting Cadence
+   $xml_cad = $xml->createElement("RunCadence");
+   $xml_tpx->appendChild($xml_cad);
+   $xml_cad_val = $xml->createTextNode($cadence);
+   $xml_cad->appendChild($xml_cad_val);
+
+   //Getting Wahoo data
+   
+   
+
  }
- // echo "Speed is $speed, time is $time, cadence is $cadence, and distance is $distance ";
+  echo "Speed is $speed, time is $time, cadence is $cadence, and distance is $distance HR is $hr ";
 }
 
 $xml->preserveWhiteSpace = false;
