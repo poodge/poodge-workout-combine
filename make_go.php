@@ -1,7 +1,7 @@
 #!/usr/bin/php -q
 <?php
-$wahoo_file = "20140726/activity_running_wahoo.tcx";
-$garmin_file = "20140726/activity_running_garmin.tcx";
+$wahoo_file = "20140729/activity_running_wahoo.tcx";
+$garmin_file = "20140729/activity_running_garmin.tcx";
 //$wahoo_xml = simplexml_load_file($wahoo_file, 'SimpleXMLElement',LIBXML_NOCDATA); 
 $wahoo_xml = simplexml_load_file($wahoo_file); 
 $garmin_xml = simplexml_load_file($garmin_file); 
@@ -34,6 +34,9 @@ function searchForHR($id, $array) {
        //echo "whaoo time is $val->Time   garmin time is $time";
        if ($time == $val->Time) {
            $hr = ($val->HeartRateBpm->Value);
+	   if (!$hr) {
+             $hr = "0";
+           }
            return $hr;
        }
    }
@@ -69,7 +72,7 @@ $xml->appendChild($xml_tcd);
 // Start all the garmin info
 $xml_tcd_act1 = $xml->createAttribute("xsi:schemaLocation");
 $xml_tcd->appendChild($xml_tcd_act1);
-$xml_tcd_val1 = $xml->createTextNode("http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2");
+$xml_tcd_val1 = $xml->createTextNode("http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd");
 $xml_tcd_act1->appendChild($xml_tcd_val1);
 
 $xml_tcd_act2 = $xml->createAttribute("xmlns:ns5");
@@ -125,7 +128,7 @@ $xml_id->appendChild($xml_id_text);
 //Creating the lap start
 $xml_lap = $xml->createElement("Lap");
 $xml_sport->appendChild($xml_lap);
-$xml_lap_start = $xml->createAttribute("Start");
+$xml_lap_start = $xml->createAttribute("StartTime");
 $xml_lap->appendChild($xml_lap_start);
 $xml_lap_val = $xml->createTextNode($garmin_xml->Activities->Activity->Lap->attributes()->StartTime);
 $xml_lap_start->appendChild($xml_lap_val);
@@ -188,8 +191,6 @@ $xml_tm->appendChild($xml_tm_val);
 //Track and Trackpoint
 $xml_t = $xml->createElement("Track");
 $xml_lap->appendChild($xml_t);
-$xml_tp = $xml->createElement("TrackPoint");
-$xml_t->appendChild($xml_tp);
 
 
 //Creating Loop for getting all the times
@@ -204,6 +205,8 @@ foreach ($garmin_xml_new as $row) {
  $hr = searchForHR($time, $wahoo_xml_new);
  //$hr = 0;
  if (isset($speed)) {
+  $xml_tp = $xml->createElement("TrackPoint");
+  $xml_t->appendChild($xml_tp);
    //Getting Time
    $xml_time = $xml->createElement("Time");
    $xml_tp->appendChild($xml_time);
@@ -376,14 +379,14 @@ $xml_aut_act->appendChild($xml_aut_val);
   
   $xml_part = $xml->createElement("PartNumber");
   $xml_aut->appendChild($xml_part);
-  $xml_part_val = $xml->createTextNode("en");
+  $xml_part_val = $xml->createTextNode("006-D2449-00");
   $xml_part->appendChild($xml_part_val);
 
 $xml->preserveWhiteSpace = false;
 $xml->formatOutput = true;
 //$xml->loadXML($simpleXml->asXML());
 //echo $xml->saveXML();
-$xml->save("test.xml");
+$xml->save("test.tcx");
 
 //echo $garmin_xml->Activities->Activity->Lap->TotalTimeSeconds
 //print_r($garmin_xml); 
