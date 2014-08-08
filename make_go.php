@@ -1,7 +1,16 @@
 #!/usr/bin/php -q
 <?php
-$wahoo_file = "20140729/activity_running_wahoo.tcx";
-$garmin_file = "20140729/activity_running_garmin.tcx";
+header("Content-Type: text/plain");
+echo "Select the date to combine activites format is YYYYMMDD: ";
+$handle = fopen ("php://stdin","r");
+$line = fgets($handle);
+$date = trim($line);
+
+echo "Combining files for $date";
+
+
+$wahoo_file = "$date/activity_running_wahoo.tcx";
+$garmin_file = "$date/activity_running_garmin.tcx";
 //$wahoo_xml = simplexml_load_file($wahoo_file, 'SimpleXMLElement',LIBXML_NOCDATA); 
 $wahoo_xml = simplexml_load_file($wahoo_file); 
 $garmin_xml = simplexml_load_file($garmin_file); 
@@ -63,8 +72,7 @@ $garmin_xml_new = flatten_array($garmin_xml->Activities->Activity->Lap->Track->T
 //}
 
 
-$xml = new DOMDocument('1.0', 'utf-8');
-header("Content-Type: text/plain");
+$xml = new DOMDocument('1.0', 'UTF-8');
 
 $xml_tcd = $xml->createElement("TrainingCenterDatabase");
 $xml->appendChild($xml_tcd);
@@ -108,7 +116,7 @@ $xml_tcd_act7->appendChild($xml_tcd_val7);
 
 // End garmin info
 
-$xml_activities = $xml->createElement("Activites");
+$xml_activities = $xml->createElement("Activities");
 $xml_tcd->appendChild($xml_activities);
 
 //Creating the activity
@@ -119,7 +127,7 @@ $xml_sport->appendChild($xml_sport_act);
 $xml_sport_val = $xml->createTextNode("Running");
 $xml_sport_act->appendChild($xml_sport_val);
 
-$xml_id = $xml->createElement("ID");
+$xml_id = $xml->createElement("Id");
 $xml_sport->appendChild($xml_id);
 
 $xml_id_text = $xml->createTextNode($garmin_xml->Activities->Activity->Id);
@@ -205,7 +213,7 @@ foreach ($garmin_xml_new as $row) {
  $hr = searchForHR($time, $wahoo_xml_new);
  //$hr = 0;
  if (isset($speed)) {
-  $xml_tp = $xml->createElement("TrackPoint");
+  $xml_tp = $xml->createElement("Trackpoint");
   $xml_t->appendChild($xml_tp);
    //Getting Time
    $xml_time = $xml->createElement("Time");
@@ -386,7 +394,7 @@ $xml->preserveWhiteSpace = false;
 $xml->formatOutput = true;
 //$xml->loadXML($simpleXml->asXML());
 //echo $xml->saveXML();
-$xml->save("test.tcx");
+$xml->save("$date/activity_running_upload.tcx");
 
 //echo $garmin_xml->Activities->Activity->Lap->TotalTimeSeconds
 //print_r($garmin_xml); 
